@@ -9,6 +9,25 @@
   font-weight: normal;
   font-style: normal;
 }
+
+@font-face {
+  font-family: "fajala";
+  src: url("./fonts/fonts/FjallaOne-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "icons";
+  src: url("fonts/websymbols-regular-webfont.svg#WebSymbolsRegular") format("svg"),
+       url("fonts/websymbols-regular-webfont.eot");
+  src:  url("fonts/websymbols-regular-webfont.eot?#iefix") format("embedded-opentype")
+        url("fonts/websymbols-regular-webfont.eot.woff") format("woff"),
+        url("fonts/websymbols-regular-webfont.eot.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;  
+}
+
 /* ESTILOS GENERALES  */
 * {
   padding: 0;
@@ -28,12 +47,29 @@ a:hover {
   color: #285626;
   text-decoration: none;
 }
-
+/* COLORES  */
 .red {
   color: #9b2422 !important;
 }
 .blue {
   color: #0c73f2 !important;
+}
+.orange {
+  color: #d69d2a !important;
+}
+
+/* ICONOS  */
+
+.icon{
+  font-family: "icons";
+  float: left;
+  margin-right: 5px;
+  margin-top: -2px;
+}
+
+.clearfix{
+  float: none;
+  clear: both;
 }
 
 /* FORMULARIOS  */
@@ -213,6 +249,7 @@ h1 a {
 /* CONTENIDO  */
 #content {
   width: 1250px;
+  font-family: sans-serif, Arial;
   /* scroll minimo  */
   min-height: 1100px;
   margin: 0 auto;
@@ -223,7 +260,7 @@ h1 a {
 #aside,
 #frase {
   /* clear both limpar flotado y nada se monte encima de otra cosa  */
-  clear: both;
+  /* clear: both; */
   width: 200px;
   /* caja flotada a la izquierda  */
   float: left;
@@ -235,6 +272,7 @@ h1 a {
 }
 
 #frase {
+  /* clear: both; */
   padding: 10px;
   font-size: 14px;
   font-family: sans-serif;
@@ -300,4 +338,81 @@ h1 a {
 #aside input {
   margin: 0 auto;
   text-align: center;
+}
+
+/* SECCIONES  */
+#section {
+  float: right;
+  width: 75%;
+  font-family: sans-serif, Arial, Helvetica;
+  margin-right: 20px;
+}
+
+#section .titulo {
+  font-size: 24px;
+  margin-top: -20px;
+
+  font-family: "fajala";
+  font-weight: normal;
+  letter-spacing: 1px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#section section {
+  margin-top: 40px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 4px #c9c9c9;
+  color: #333333;
+  font-size: 16px;
+  overflow: hidden;
+}
+
+#section #article {
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#section .date {
+  color: gray;
+  font-size: 14px;
+}
+
+#section .stikerOne,
+#section .stikerTwo {
+  position: absolute;
+  margin-top: -38px;
+  z-index: 0;
+}
+
+#section .stikerTwo {
+  margin-left: 860px;
+}
+
+/* HISTORY */
+#history{
+  float: right;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+/* footer  */
+
+#footer{
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 40px;
+  background-color: #333333;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: white;
+  font-family: sans-serif;
+  font-size: 14px;
+  box-shadow: 0 0 2px gray;
 }
