@@ -1,0 +1,12 @@
+// variabl contenedor de informacion 
+$fuente-tipica: sans-serif, Helvetica, Arial;
+
+$color-fondo: #ccc;
+
+body{
+    background-color: $color-fondo;
+}
+
+h1{
+    font-family: $fuente-tipica;
+}
